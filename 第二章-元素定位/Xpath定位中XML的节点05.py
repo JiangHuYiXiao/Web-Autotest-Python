@@ -13,6 +13,7 @@ from time import sleep
 driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get('http://news.baidu.com')
-driver.find_element_by_xpath('//*[@id="ww"]').send_keys('金蝶')
+# driver.find_element_by_xpath('//*[@id="ww"]').send_keys('金蝶')    # 通过属性定位，查找,鼠标右键可以获取到浏览器给出的Xpath
+driver.find_element_by_xpath('html/body/div/div/table/tbody/tr/td/table/tbody/tr/td/div/span/input').send_keys('金蝶')        # 通过绝对路径查找
 sleep(2)
 driver.quit()
