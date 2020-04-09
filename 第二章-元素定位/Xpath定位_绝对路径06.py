@@ -8,5 +8,8 @@ from time import sleep
 driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get('http://news.baidu.com')
-driver.find_element_by_xpath('')
+# 利用Xpath的绝对路径来定位元素
+driver.find_element_by_xpath('html/body/div/div/table/tbody/tr/td/table/tbody/tr/td/div/span/input').send_keys('武汉')
+driver.find_element_by_xpath('html/body/div/div/table/tbody/tr/td/table/tbody/tr/td/div/span[2]/input').click()       # 结合索引定位
+sleep(2)
 driver.quit()
