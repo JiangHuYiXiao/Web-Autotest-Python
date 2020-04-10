@@ -3,7 +3,7 @@
 # @Time           : 2020/4/10 8:08
 # @Software       : Web-Autotest-Python
 # @Python_verison : 3.7
-
+# Xpath多个class之间不加任何符合，CSS定位需要加.
 # 模糊属性值定位是通过starts_with函数和contains函数来进行定位的
 # starts_with              以什么开头
 # contains                 包含什么
