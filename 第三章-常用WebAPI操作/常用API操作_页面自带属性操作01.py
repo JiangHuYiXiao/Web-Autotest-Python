@@ -10,6 +10,7 @@
     # maximize_window       窗口最大化   因为selenium只对当前页面可见的元素进行操作
     # driver.set_window_size(400,800)  设置窗体大小
     # driver.back()        返回上一个窗口，这个是自带的，我们一般用的多的是，driver.get(url)到指定的url上
+    # driver.clear()        清除内容
 
 # 示例1：
 # from selenium import webdriver
@@ -30,13 +31,25 @@
 
 # 示例2，driver.back()和driver.get()
 
+# from selenium import webdriver
+# from time import sleep
+# driver = webdriver.Chrome()
+# driver.get('http://www.baidu.com')
+# sleep(2)
+# driver.find_element_by_link_text('新闻').click()
+# sleep(2)
+# # driver.back()                             # 返回上一个窗口
+# driver.get('http://www.baidu.com')          # 使用这种返回到指定窗口
+# driver.quit()
+
+
+# 示例3，driver.clear()清除内容
 from selenium import webdriver
 from time import sleep
 driver = webdriver.Chrome()
 driver.get('http://www.baidu.com')
+inputEle = driver.find_element_by_xpath('//input[@id="kw"]').send_keys('盗墓笔记')
 sleep(2)
-driver.find_element_by_link_text('新闻').click()
+driver.find_element_by_xpath('//input[@id="kw"]').clear()
 sleep(2)
-# driver.back()                             # 返回上一个窗口
-driver.get('http://www.baidu.com')          # 使用这种返回到指定窗口
 driver.quit()
