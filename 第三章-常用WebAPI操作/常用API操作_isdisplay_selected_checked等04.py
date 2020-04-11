@@ -24,7 +24,8 @@
 from selenium import webdriver
 from time import sleep
 driver = webdriver.Chrome()
-driver.get('http://news.baidu.com')
+driver.get('http://www.baidu.com')
+driver.maximize_window()
 sleep(2)
 print(driver.window_handles)
 longinEle = driver.find_element_by_link_text('登录')
@@ -32,12 +33,13 @@ longinEle.click()
 # 判断登录按钮是否可见，可操作
 print(longinEle.is_displayed())
 print(longinEle.is_enabled())
-
+sleep(2)
+# 点击用户名登录
+driver.find_element_by_id('TANGRAM__PSP_10__footerULoginBtn').click()
 print(driver.current_window_handle)
-# driver.switch_to.window()
+
 # 点击登陆后，判断下次自动登录checkbox是否勾选
-# remberEle = driver.find_element_by_name('memberPass')
-remberEle = driver.find_element_by_css_selector('input[class="pass-checkbox-input.pass-checkbox-memberPass"]')
+remberEle = driver.find_element_by_xpath('//*[@id="TANGRAM__PSP_10__memberPass"]')
 print(remberEle.is_selected())
 sleep(2)
 remberEle.click()
