@@ -8,7 +8,7 @@ from time import sleep
 import unittest
 
 
-# 在本测试TestCase执行，是按照ascii码顺序执行的，所以肯定是先执行baidu1，后执行sogou1
+# 在本测试TestCase执行，是按照ascii码顺序执行的，所以肯定是先执行baidu2，后执行sogou2
 class MyTestCase2(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Chrome()
