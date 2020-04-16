@@ -19,7 +19,7 @@ if __name__ == '__main__':
     # file = open('./result1.html',mode='wb')
     # runner = HTMLTestRunner_cn.HTMLTestRunner(stream=file,title='百度搜索测试报告',description='含有三条用例，测试中文、英文、拼音的三个的搜索结果')
     # HTMLTestRunner_PY3
-    file = open('./result2.html',mode='wb')
+    file = open('./result.html',mode='wb')
     runner = HTMLTestRunner_PY3.HTMLTestRunner(stream=file,title='百度搜索测试报告',description='含有三条用例，测试中文、英文、拼音的三个的搜索结果')
 
     runner.run(suite)
