@@ -27,7 +27,7 @@ class Test_Yong(unittest.TestCase):
         print('用例执行：end')
     @unittest.expectedFailure
     # 登录
-    def test_00ogin(self):
+    def test_00login(self):
         # print('111')
         self.driver.find_element_by_xpath('//input[@id="account"]').send_keys('admin')
         self.driver.find_element_by_xpath('//input[@name="password"]').send_keys('jianghu@123')
