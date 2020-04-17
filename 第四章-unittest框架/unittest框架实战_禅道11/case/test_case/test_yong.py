@@ -27,23 +27,38 @@ class Test_Yong(unittest.TestCase):
         print('用例执行：end')
     @unittest.expectedFailure
     # 登录
-    def test_00login(self):
+    def test_00ogin(self):
         # print('111')
         self.driver.find_element_by_xpath('//input[@id="account"]').send_keys('admin')
         self.driver.find_element_by_xpath('//input[@name="password"]').send_keys('jianghu@123')
         self.driver.find_element_by_xpath('//button[@id="submit"]').click()
         sleep(1)
         self.assertIn('我的地盘',self.driver.page_source,'登录失败')
-        sleep(1)
+        sleep(3)
+
     # 添加用例
-    def test_addcase(self):
+    def test_01addcase(self):
         self.driver.find_element_by_xpath('//*[@id="navbar"]/ul/li[4]/a').click()
-        self.driver.find_element_by_xpath()
-        sleep(4)
-        self.assertEqual(1,1)
+        sleep(1)
+        self.driver.find_element_by_xpath('//*[@id="subNavbar"]/ul/li[2]/a').click()
+        sleep(1)
+        self.driver.find_element_by_xpath('//*[@id="mainMenu"]/div[3]/a[2]').click()
+        self.driver.find_element_by_xpath('//*[@id="title"]').send_keys('创建工作日历')
+        sleep(1)
+        self.driver.find_element_by_xpath('//button[@id="submit"]').click()
+        sleep(3)
+        self.assertIn('创建工作日历',self.driver.page_source)
     # 编辑用例
-    # def test_editcase(self):
-    #     pass
+    def test_02editcase(self):
+        self.driver.find_element_by_xpath('//*[@id="caseList"]/tbody/tr/td[13]/a[3]/i').click()
+        sleep(1)
+        self.driver.find_element_by_xpath('//*[@id="pri_chosen"]/a/span').click()
+
+        self.driver.find_element_by_xpath('//*[@id="pri_chosen"]/div/ul/li[3]').click()
+        self.driver.execute_script("scroll(0,1000)")
+        sleep(1)
+        self.driver.find_element_by_xpath('//button[@id="submit"]').click()
+        sleep(2)
 
 if __name__ == '__main__':
     unittest.main()
