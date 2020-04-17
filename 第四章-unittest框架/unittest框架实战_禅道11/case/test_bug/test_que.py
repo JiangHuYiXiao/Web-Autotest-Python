@@ -27,6 +27,7 @@ class Test_Que(unittest.TestCase):
         print('用例执行：end')
     @unittest.expectedFailure
     # 登录
+    @unittest.expectedFailure
     def test_00login(self):
         # print('111')
         self.driver.find_element_by_xpath('//input[@id="account"]').send_keys('admin')
