@@ -28,7 +28,7 @@ class Test_Que(unittest.TestCase):
     @unittest.expectedFailure
     # 登录
     @unittest.expectedFailure
-    def test_00login(self):
+    def test_00ogin(self):
         # print('111')
         self.driver.find_element_by_xpath('//input[@id="account"]').send_keys('admin')
         self.driver.find_element_by_xpath('//input[@name="password"]').send_keys('jianghu@123')
@@ -37,9 +37,34 @@ class Test_Que(unittest.TestCase):
         self.assertIn('我的地盘',self.driver.page_source,'登录失败')
         sleep(3)
 
-    def test_addbug(self):
-        pass
+    def test_01addbug(self):
+        self.driver.find_element_by_xpath('//*[@id="navbar"]/ul/li[4]/a').click()
+        sleep(1)
+        self.driver.find_element_by_xpath('//*[@id="subNavbar"]/ul/li[1]/a').click()
+        sleep(1)
+        self.driver.find_element_by_xpath('//*[@id="mainMenu"]/div[3]/a[3]').click()
+        sleep(1)
+        self.driver.find_element_by_xpath('//*[@id="openedBuild_chosen"]/ul').click()
+        self.driver.find_element_by_xpath('//*[@id="openedBuild_chosen"]/div/ul/li[2]').click()
+        sleep(2)
+        self.driver.find_element_by_xpath('//*[@id="title"]').send_keys('创建工作日历报错')
+        self.driver.execute_script("scroll(0,600)")
+        sleep(2)
+        self.driver.find_element_by_xpath('//*[@id="submit"]').click()
+        sleep(2)
 
     def test_editbug(self):
-        pass
+        self.driver.find_element_by_xpath('//*[@id="bugList"]/tbody/tr[1]/td[11]/a[3]/i').click()
+        sleep(2)
+        self.driver.find_element_by_xpath('//*[@id="module_chosen"]/a/span').click()
+        self.driver.find_element_by_xpath('//*[@id="module_chosen"]/div/ul/li[2]').click()
+        sleep(1)
+        self.driver.execute_script("scroll(0,600)")
+        sleep(2)
+        self.driver.find_element_by_xpath('//*[@id="submit"]').click()
+        sleep(1)
 
+
+
+if __name__ =='__main__':
+    unittest.main()

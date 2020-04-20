@@ -24,7 +24,7 @@ def SendMail():
     receiver = '1163270704@qq.com'  #
 
     # 发送邮箱主题
-    subject = '禅道测试报告'
+    subject = '百度搜索测试报告'
 
     # 编写HTML类型的邮件正文
     msg = MIMEText('正文内容')
@@ -42,7 +42,7 @@ def SendMail():
 # 调用发送邮件的方法
 # SendMail()
 
-def SendMailAttach():
+def SendMailAttach(filename):
 # 发送邮箱服务器
     smtpserver = 'smtp.qq.com'
 
@@ -58,11 +58,11 @@ def SendMailAttach():
 
     # 编写HTML类型的邮件正文
     msg = MIMEMultipart()
-    att = MIMEText(open('./result.html','rb').read(),'base64','utf-8')
+    att = MIMEText(open(filename,'rb').read(),'base64','utf-8')
     att['Content-Type'] = 'application/octet-stream'
-    att['Content-Disposition'] = 'attachment;filename=result.html'
+    att['Content-Disposition'] = 'attachment;filename="'+filename[14:]+'"'     #附件的名称
     msg.attach(att)
-    mail_title = '测试结果'+str(datetime.date.today())
+    mail_title = '禅道测试结果'+str(datetime.date.today())
     msg['Subject'] = Header(mail_title, 'utf-8')
     msg['From'] = sender
     msg['To'] = receiver
@@ -79,4 +79,4 @@ def SendMailAttach():
 
     smtp.quit()
 # 调用发送附件的邮件方法
-SendMailAttach()
+# SendMailAttach()
