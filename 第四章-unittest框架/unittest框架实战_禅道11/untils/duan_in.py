@@ -23,7 +23,7 @@ def duan_in(yu,shi,case):
 
 def duan_equal(yu,shi,case):
     try:
-        unittest.TestCase().assertIn(yu,shi,case)
+        unittest.TestCase().assertEqual(yu,shi,case)
     except NoSuchElementException as e:
         print('元素未找到')
     except AssertionError as e:
