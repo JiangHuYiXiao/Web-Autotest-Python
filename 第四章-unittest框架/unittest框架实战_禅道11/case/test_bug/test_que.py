@@ -7,6 +7,8 @@ from selenium import webdriver
 from time import sleep
 import unittest
 from selenium.webdriver.common.keys import Keys
+from untils.duan_in import duan_in
+# from untils.log_cn import make_report
 
 class Test_Que(unittest.TestCase):
     @classmethod
@@ -25,16 +27,19 @@ class Test_Que(unittest.TestCase):
 
     def tearDown(self):
         print('用例执行：end')
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     # 登录
-    @unittest.expectedFailure
-    def test_00ogin(self):
+    # @unittest.expectedFailure
+    def test_00login(self):
         # print('111')
         self.driver.find_element_by_xpath('//input[@id="account"]').send_keys('admin')
         self.driver.find_element_by_xpath('//input[@name="password"]').send_keys('jianghu@123')
         self.driver.find_element_by_xpath('//button[@id="submit"]').click()
         sleep(1)
-        self.assertIn('我的地盘',self.driver.page_source,'登录失败')
+        # self.assertIn('我的地盘211',self.driver.page_source,'登录失败')
+
+        # 调用断言方法判断是否登录成功
+        duan_in('我的地盘',self.driver.page_source,'登录用例')
         sleep(3)
 
     def test_01addbug(self):

@@ -3,7 +3,10 @@
 # @Time           : 2020/4/15 19:10
 # @Software       : Web-Autotest-Python
 # @Python_verison : 3.7
-# 整合发送普通邮件的程序和发送带有附件的邮件，以后直接在项目中使用
+'''
+整合发送普通邮件的程序和发送带有附件的邮件，以后直接在项目中使用
+'''
+
 import smtplib,datetime
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
