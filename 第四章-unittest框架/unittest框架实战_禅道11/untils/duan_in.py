@@ -8,13 +8,14 @@
 '''
 import unittest,time
 from selenium.common.exceptions import NoSuchElementException
-
-def duan_in(yu,shi,case):
+from untils.screen_shot import screenshot
+def duan_in(driver,yu,shi,filename):
     try:
-        unittest.TestCase().assertIn(yu,shi,case)
+        unittest.TestCase().assertIn(yu,shi,filename)
     except NoSuchElementException as e:
         print('元素未找到')
     except AssertionError as e:
+        screenshot(driver,filename)
         print('预期结果和实际结果不相符')
     except Exception as e:
         print('未知错误')
