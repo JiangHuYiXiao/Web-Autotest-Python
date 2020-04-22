@@ -10,4 +10,4 @@ import time
 now = time.strftime('%Y_%m_%d')
 nows = time.strftime('%H_%M_%S')
 def screenshot(driver,filename):
-    driver.get_screenshot_as_file('./../../report/'+now+'/png/'+nows+filename+'.png')
+    driver.get_screenshot_as_file('./report/'+now+'/png/'+nows+filename+'.png')

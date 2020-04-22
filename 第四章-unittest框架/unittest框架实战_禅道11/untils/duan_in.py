@@ -14,19 +14,19 @@ def duan_in(driver,yu,shi,filename):
     try:
         unittest.TestCase().assertIn(yu,shi,filename)
     except NoSuchElementException as e:
-        screenshot(driver, filename)
-        write_log('预期%r : 实际%r' % (yu, shi))
+        # screenshot(driver, filename)
+        # write_log('预期%r : 实际%r' % (yu, shi))
         print('元素未找到')
+        unittest.TestCase().assertIn(yu, shi, filename)
     except AssertionError as e:
         screenshot(driver,filename)
         write_log('预期%r : 实际%r'%(yu,shi))
+        print('预期结果和实际结果不相等')
+        unittest.TestCase().assertIn(yu, shi, filename)
     except Exception as e:
-        screenshot(driver, filename)
-        write_log('预期%r : 实际%r' % (yu, shi))
         print('未知错误')
+        unittest.TestCase().assertIn(yu,shi,filename)
     else:
-        screenshot(driver, filename)
-        write_log('预期%r : 实际%r' % (yu, shi))
         print('执行通过')
 
 def duan_equal(yu,shi,case):
