@@ -15,3 +15,16 @@ def make_report(path):
         os.makedirs(path+'/html')
         os.makedirs(path+'/png')
 
+
+'''
+记录日志
+'''
+nowd = time.strftime('%Y_%m_%d')
+# nows = time.strftime('%H_%M_%S')
+fnow = time.strftime('%H:%M:%S')
+def write_log(info):
+    with open('./../../log/'+nowd+'.log',mode='a',encoding='utf-8') as logfile:
+        logfile.write(fnow+' '+info)
+        logfile.write('\n')
+
+

@@ -8,6 +8,6 @@
 '''
 import time
 now = time.strftime('%Y_%m_%d')
-now1 = time.strftime('%H_%M_%S')
+nows = time.strftime('%H_%M_%S')
 def screenshot(driver,filename):
-    driver.get_screenshot_as_file('F:/Web-Autotest-Python/第四章-unittest框架/nittest框架实战_禅道11/report/'+now+'/png/'+now1+filename+'.png')
+    driver.get_screenshot_as_file('./../../report/'+now+'/png/'+nows+filename+'.png')
