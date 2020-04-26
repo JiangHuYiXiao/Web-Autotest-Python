@@ -79,6 +79,5 @@ class Test_Baidu_Handles(unittest.TestCase):
         # 异常处理
         self.hands_check(hands,self.driver,'微信预约就可核酸检测！周六广州红会医院外排起了长队_南方plus_南方+')
 
-
 if __name__ == '__main__':
     unittest.main()
