@@ -24,6 +24,27 @@ class Test_Baidu_Handles(unittest.TestCase):
         time.sleep(2)
         self.driver.quit()
 
+    def hands_check(self,hands,driver,duanyan):
+        '''
+        多窗口操作hands和断言方法
+        :param hands:
+        :param driver:
+        :param duanyan:
+        :return:
+        '''
+        try:
+            self.assertEqual(duanyan, driver.title, '预期与实际不相等')
+        except AssertionError as e:
+            self.assertEqual(duanyan, driver.title, '预期与实际不相等')
+        finally:
+            # 不管如何先要关闭当前页面，然后切回到最初的页面，这样下面的用例才能继续在最初的窗口上寻找元素，进行操作
+            for i in range(len(hands)):
+                if i == len(hands)-1:
+                    break
+                else:
+                    self.driver.close()
+                    self.driver.switch_to.window(hands[len(hands)-i-2])
+
     def setUp(self):
         print('用例执行：start')
 
@@ -40,18 +61,8 @@ class Test_Baidu_Handles(unittest.TestCase):
         # 切换到新开的窗口
         self.driver.switch_to.window(hands[1])
         # 异常处理
-        try:
-            self.assertEqual('1习近平陕西行，释放了哪些讯号？_新闻频道_央视网(cctv.com))',self.driver.title,'预期与实际不相等')
-        except AssertionError as e:
-            self.assertEqual('1习近平陕西行，释放了哪些讯号？_新闻频道_央视网(cctv.com))', self.driver.title, '预期与实际不相等')
-        finally:
-            # 不管如何先要关闭当前页面，然后切回到最初的页面，这样下面的用例才能继续在最初的窗口上寻找元素，进行操作
-            for i in range(len(hands)):
-                if i == len(hands)-1:
-                    break
-                else:
-                    self.driver.close()
-                    self.driver.switch_to.window(hands[len(hands)-i-2])
+        self.hands_check(hands,self.driver,'陕西之行  习近平为如期实现全面脱贫注入新动力--时政--人民网')
+        time.sleep(2)
 
 
 
@@ -66,20 +77,7 @@ class Test_Baidu_Handles(unittest.TestCase):
         # print(hands,current_hands)
         self.driver.switch_to.window(hands[1])
         # 异常处理
-        try:
-            self.assertEqual('微信预约就可核酸检测！周六广州红会医院外排起了长队_南方plus_南方+', self.driver.title, '预期与实际不相等')
-        except AssertionError as e:
-            print('预期和实际不相等，用例执行不通过')
-            self.assertEqual('微信预约就可核酸检测！周六广州红会医院外排起了长队_南方plus_南方+', self.driver.title, '预期与实际不相等')
-        finally:
-            # 不管如何先要关闭当前页面，然后切回到最初的页面，这样下面的用例才能继续在最初的窗口上寻找元素，进行操作
-            for i in range(len(hands)):
-                if i == len(hands)-1:
-                    break
-                else:
-                    self.driver.close()
-                    time.sleep(2)
-                    self.driver.switch_to.window(hands[len(hands)-i-2])
+        self.hands_check(hands,self.driver,'微信预约就可核酸检测！周六广州红会医院外排起了长队_南方plus_南方+')
 
 
 if __name__ == '__main__':
