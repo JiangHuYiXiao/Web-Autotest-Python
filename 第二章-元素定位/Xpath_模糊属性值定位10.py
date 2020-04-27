@@ -12,7 +12,7 @@ from time import sleep
 driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get('http://news.baidu.com')
-driver.find_element_by_xpath('//input[contains(@class,word)]').send_keys('霸王别姬')
+driver.find_element_by_xpath('//input[contains(@class,"word")]').send_keys('霸王别姬')
 driver.find_element_by_xpath('//a[starts-with(@value,百)]').click()
 sleep(2)
 driver.quit()
