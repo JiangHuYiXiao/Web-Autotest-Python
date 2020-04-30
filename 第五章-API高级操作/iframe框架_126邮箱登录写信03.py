@@ -56,7 +56,7 @@ class Test_126(unittest.TestCase):
         # 切换到主文档，因为上面的登录用例的操作一直在iframe框架上
         self.driver.switch_to.default_content()
         sleep(1)
-        self.driver.find_element_by_xpath('//span[text()="写 信"]').click()
+        self.driver.find_element_by_xpath('//span[()="写 信"]').click()
         sleep(1)
         self.driver.find_element_by_xpath('//input[@class="nui-editableAddr-ipt"]').send_keys('1721906562@qq.com')
         sleep(1)
