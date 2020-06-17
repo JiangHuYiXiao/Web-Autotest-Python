@@ -4,6 +4,16 @@ from selenium import webdriver
 import time,unittest,ddt,logging,traceback
 from Report_Template import htmlTemplate    # JSON文件的读取和数据处理05
 from selenium.common.exceptions import NoSuchElementException
+# 初始化日志对象
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s %(filename)s[line:%(lineno)s] %(levelname)s %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+    filename='./test_json_log.log',
+    filemode='w'
+)
+
+
 # 1、使用全局变量
 '''
 @ddt.ddt            # 声明
@@ -121,7 +131,7 @@ class Test1(unittest.TestCase):
             status = 'fail'
             flag = 0
         except AssertionError as e:
-            logging.info("搜索:%s,期望:%s,失败" % (testdata,exceptdata))
+            logging.error("搜索:%s,期望:%s,失败" % (testdata,exceptdata))
             status = 'fail'
             flag = 0
         except Exception as e:
