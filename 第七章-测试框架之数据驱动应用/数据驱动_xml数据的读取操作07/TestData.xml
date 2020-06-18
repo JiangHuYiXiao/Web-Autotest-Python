@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bookList type='technology'>
+<book>
+	<name>软达启航</name>
+	<author>有限公司</author>
+</book>
+<book>
+	<name>HTTP权威指南</name>
+	<author>古尔利</author>
+</book>
+</bookList>

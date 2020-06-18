@@ -1,0 +1,80 @@
+1527146582066	geckodriver	INFO	Listening on 127.0.0.1:13477
+1527146584144	geckodriver::marionette	INFO	Starting browser \\?\C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1527146585378	Marionette	INFO	Enabled via --marionette
+1527146586719	Marionette	INFO	Listening on port 13483
+1527146587259	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=%E8%BD%AF%E8%BE%BE%E5%90%AF%E8%88%AA&json=1&p=3&sid=13549_1467_21102_26350_20927&req=2&csor=4&pwd=%E8%BD%AF%E8%BE%BE%E5%90%AF&cb=jQuery110207792274801047262_1527146588024&_=1527146588029, line 1: TypeError: jQuery110207792274801047262_1527146588024 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=%E8%BD%AF%E8%BE%BE%E5%90%AF&json=1&p=3&sid=13549_1467_21102_26350_20927&req=2&csor=3&pwd=%E8%BD%AF%E8%BE%BE&cb=jQuery110207792274801047262_1527146588024&_=1527146588028, line 1: TypeError: jQuery110207792274801047262_1527146588024 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=%E8%BD%AF%E8%BE%BE&json=1&p=3&sid=13549_1467_21102_26350_20927&req=2&csor=2&pwd=%E8%BD%AF&cb=jQuery110207792274801047262_1527146588024&_=1527146588027, line 1: TypeError: jQuery110207792274801047262_1527146588024 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=%E8%BD%AF&json=1&p=3&sid=13549_1467_21102_26350_20927&req=2&csor=1&cb=jQuery110207792274801047262_1527146588024&_=1527146588026, line 1: TypeError: jQuery110207792274801047262_1527146588024 is not a function
+[Parent 8868, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1527146594796	geckodriver	INFO	Listening on 127.0.0.1:13549
+1527146596890	geckodriver::marionette	INFO	Starting browser \\?\C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args ["-marionette"]
+1527146598207	Marionette	INFO	Enabled via --marionette
+1527146599528	Marionette	INFO	Listening on port 13557
+1527146600039	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=HT&json=1&p=3&sid=1430_26459_21104_20718&req=2&csor=2&pwd=H&cb=jQuery1102032478768692534754_1527146600681&_=1527146600684, line 1: TypeError: jQuery1102032478768692534754_1527146600681 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=HTTP&json=1&p=3&sid=1430_26459_21104_20718&req=2&csor=4&pwd=HTT&cb=jQuery1102032478768692534754_1527146600681&_=1527146600686, line 1: TypeError: jQuery1102032478768692534754_1527146600681 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=HTT&json=1&p=3&sid=1430_26459_21104_20718&req=2&csor=3&pwd=HT&cb=jQuery1102032478768692534754_1527146600681&_=1527146600685, line 1: TypeError: jQuery1102032478768692534754_1527146600681 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=HTTP%E6%9D%83&json=1&p=3&sid=1430_26459_21104_20718&req=2&csor=5&pwd=HTTP&cb=jQuery1102032478768692534754_1527146600681&_=1527146600687, line 1: TypeError: jQuery1102032478768692534754_1527146600681 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=HTTP%E6%9D%83%E5%A8%81&json=1&p=3&sid=1430_26459_21104_20718&req=2&csor=6&pwd=HTTP%E6%9D%83&cb=jQuery1102032478768692534754_1527146600681&_=1527146600688, line 1: TypeError: jQuery1102032478768692534754_1527146600681 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=HTTP%E6%9D%83%E5%A8%81%E6%8C%87&json=1&p=3&sid=1430_26459_21104_20718&req=2&csor=7&pwd=HTTP%E6%9D%83%E5%A8%81&cb=jQuery1102032478768692534754_1527146600681&_=1527146600689, line 1: TypeError: jQuery1102032478768692534754_1527146600681 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=H&json=1&p=3&sid=1430_26459_21104_20718&req=2&csor=1&cb=jQuery1102032478768692534754_1527146600681&_=1527146600683, line 1: TypeError: jQuery1102032478768692534754_1527146600681 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=HTTP%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97&json=1&p=3&sid=1430_26459_21104_20718&req=2&csor=8&pwd=HTTP%E6%9D%83%E5%A8%81%E6%8C%87&cb=jQuery1102032478768692534754_1527146600681&_=1527146600690, line 1: TypeError: jQuery1102032478768692534754_1527146600681 is not a function
+1567216307088	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Demon\\AppData\\Local\\Temp\\rust_mozprofile.imPwleXWoIJJ"
+1567216307601	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1567216307601	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1567216307601	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1567216307602	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1567216309536	Marionette	INFO	Listening on port 1502
+1567216309794	Marionette	WARN	TLS certificate errors will be ignored for this session
+1567216316622	Marionette	INFO	Stopped listening on port 1502
+[Parent 6736, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 4748, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 4748, Chrome_ChildThread] WARNING: pipe er[Child 3828, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 3828, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc1567216321400	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Demon\\AppData\\Local\\Temp\\rust_mozprofile.I7e919OXAUuT"
+1567216321872	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1567216321872	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1567216321872	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1567216321872	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1567216323622	Marionette	INFO	Listening on port 1567
+1567216324110	Marionette	WARN	TLS certificate errors will be ignored for this session
+1567216330919	Marionette	INFO	Stopped listening on port 1567
+[Child 8096, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8096, Chrome_C[Parent 7788, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1516, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 1516, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8028, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 8028, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1565706750/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1576896978219	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Demon\\AppData\\Local\\Temp\\rust_mozprofile.8P1FzPmMwbxd"
+1576896978720	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1576896978720	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1576896978720	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1576896978720	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1576896980650	Marionette	INFO	Listening on port 1639
+1576896980935	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://dss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+1576896988800	Marionette	INFO	Stopped listening on port 1639
+[Parent 5168, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6196, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6196, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_chann[Child 5616, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Parent 5168, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6732, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 6732, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1576896993863	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Demon\\AppData\\Local\\Temp\\rust_mozprofile.d7vuWCZBA2E6"
+1576896994315	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1576896994315	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1576896994315	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1576896994315	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1576896995894	Marionette	INFO	Listening on port 1717
+1576896995971	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://dss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+1576897003440	Marionette	INFO	Stopped listening on port 1717
+[Parent 7080, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 5516, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 5516, Chrome_ChildThread] WARNI[Child 5740, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282935/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 5740, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1575282
