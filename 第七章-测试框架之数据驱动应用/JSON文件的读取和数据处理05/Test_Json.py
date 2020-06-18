@@ -91,7 +91,7 @@ class Test1(unittest.TestCase):
 class Test1(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        # 使用全局变量来解决，table表格数据为空的问题
+        # 使用类去操作静态属性
 
         Test1.baidu_test = ' '
         self.driver = webdriver.Chrome()
