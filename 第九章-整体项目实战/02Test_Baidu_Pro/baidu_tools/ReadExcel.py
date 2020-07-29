@@ -26,7 +26,7 @@ class Parse_Excel():
 
 
 if __name__ == '__main__':
-    excel_path = './baidu_test_data.xlsx'
+    excel_path = './../data/baidu_test_data.xlsx'
     sheetname = 'baidu_sou'
     pe = Parse_Excel(excel_path,sheetname)
     print(pe.getDataFromSheet())

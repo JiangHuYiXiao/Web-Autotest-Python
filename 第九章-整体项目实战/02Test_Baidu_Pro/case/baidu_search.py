@@ -3,9 +3,14 @@
 # @Time           : 2020/7/27 8:31
 # @Software       : Web-Autotest-Python
 # @Python_verison : 3.7
-import time,unittest
+import time,unittest,ddt
 from selenium import webdriver
+from baidu_tools.ReadExcel import Parse_Excel
+excel_path = './../data/baidu_test_data.xlsx'
+sheetname = 'baidu_sou'
+excel = Parse_Excel(excel_path,sheetname)
 
+@ddt.ddt
 class Baidu_Search(unittest.TestCase):
     @classmethod
     def setUpClass(self):
@@ -21,12 +26,15 @@ class Baidu_Search(unittest.TestCase):
     def setUp(self):
         pass
 
-    def test_search(self):
-        self.driver.find_element_by_xpath('//input[@id="kw"]').send_keys('胡锡进')
+    @ddt.data( * excel.getDataFromSheet())
+    def test_search(self,data):
+        print(data)
+        self.driver.find_element_by_xpath('//input[@id="kw"]').clear()
+        self.driver.find_element_by_xpath('//input[@id="kw"]').send_keys(data[0])
         time.sleep(2)
         self.driver.find_element_by_xpath('//input[@id="su"]').click()
         time.sleep(2)
-        self.assertEqual('胡锡进_百度搜索',self.driver.title)
+        self.assertEqual(data[1]+'_百度搜索',self.driver.title)
 
     def tearDown(self):
         pass
