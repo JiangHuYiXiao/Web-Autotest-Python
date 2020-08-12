@@ -6,7 +6,14 @@
 import time,unittest
 from selenium import webdriver
 from baidu_tools import screen_shot
+from baidu_tools.ReadExcel import Parse_Excel
+import ddt
+excel_path = './../data/baidu_test_data.xlsx'
+sheetname = 'news_sou'
+excel = Parse_Excel(excel_path,sheetname)
 now_time = time.strftime('%Y_%m_%d %H_%M_%S')    # 2020_01_01 12_14_05
+
+@ddt.ddt
 class Baidu_Search(unittest.TestCase):
     @classmethod
     def setUpClass(self):
@@ -22,15 +29,16 @@ class Baidu_Search(unittest.TestCase):
     def setUp(self):
         pass
 
-    def test_search(self):
-        self.driver.find_element_by_xpath('//input[@id="ww"]').send_keys('胡锡进')
+    @ddt.data(* excel.getDataFromSheet())
+    def test_search(self,data):
+        self.driver.find_element_by_xpath('//input[@id="ww"]').send_keys(data[0])
         time.sleep(2)
         self.driver.find_element_by_xpath('//input[@id="s_btn_wr"]').click()
         time.sleep(2)
         try:
-            self.assertEqual('百度资讯搜索_胡锡进22',self.driver.title)
+            self.assertEqual(data[1]+'_百度搜索',self.driver.title)
         except Exception as e:
-            self.driver.get_screenshot_as_file('./../report/'+now_time[:10]+'/png/'+now_time[-8:]+'.png')
+            self.driver.get_screenshot_as_file('./../report/'+now_time[:10]+'/png/'+data[1]+'.png')
             print('用例执行不通过')
         else:
             print('用例执行通过')
