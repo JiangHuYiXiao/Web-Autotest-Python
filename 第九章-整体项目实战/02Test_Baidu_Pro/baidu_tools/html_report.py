@@ -8,5 +8,6 @@ import HTMLTestRunner,time,os
 def make_dir(path):
     if not(os.path.exists(path)):
         os.makedirs(path + '/html')
+        os.makedirs(path + '/png')
 
 # now_time = time.strftime('%Y_%m_%d_%H_%M_%S')

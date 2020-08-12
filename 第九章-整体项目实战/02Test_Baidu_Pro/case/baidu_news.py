@@ -5,7 +5,8 @@
 # @Python_verison : 3.7
 import time,unittest
 from selenium import webdriver
-
+from baidu_tools import screen_shot
+now_time = time.strftime('%Y_%m_%d %H_%M_%S')    # 2020_01_01 12_14_05
 class Baidu_Search(unittest.TestCase):
     @classmethod
     def setUpClass(self):
@@ -26,7 +27,13 @@ class Baidu_Search(unittest.TestCase):
         time.sleep(2)
         self.driver.find_element_by_xpath('//input[@id="s_btn_wr"]').click()
         time.sleep(2)
-        self.assertEqual('百度资讯搜索_胡锡进',self.driver.title)
+        try:
+            self.assertEqual('百度资讯搜索_胡锡进22',self.driver.title)
+        except Exception as e:
+            self.driver.get_screenshot_as_file('./../report/'+now_time[:10]+'/png/'+now_time[-8:]+'.png')
+            print('用例执行不通过')
+        else:
+            print('用例执行通过')
 
     def tearDown(self):
         pass
