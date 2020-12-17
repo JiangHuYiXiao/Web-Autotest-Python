@@ -4,12 +4,6 @@
 # @Software       : Web-Autotest-Python
 # @Python_verison : 3.7
 
-'''
-conftest文件用来写一些前置条件
-conftest.py配置脚本名称是固定的，不能改名称
-conftest.py和运行的用例要在同一个pakage下，并且有__init__.py文件
-不需要import导入conftest.py，pytest用例会自动查找
-'''
 
 import pytest
 
