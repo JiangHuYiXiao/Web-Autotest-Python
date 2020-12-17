@@ -42,7 +42,7 @@
 
     # 3.5.标记表达式
         # >pytest -m slow
-        # 将运行用@ pytest.mark.slow装饰器修饰的所有测试。后面章节会讲自定义标记mark的功能。
+        # 将运行用@ pytest.mark.slow装饰器修饰的所有测试用例，标签名为slow，标签名可以自定义，后面章节会讲自定义标记mark的功能。
 
     # 3.6.从包里面运行
         # >pytest --pyargs pkg.testing
