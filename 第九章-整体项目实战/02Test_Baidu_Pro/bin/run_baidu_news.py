@@ -15,6 +15,7 @@ report_file = make_dir('./../report/'+now_time[:10])
 
 html_file = ('./../report/'+now_time[:10]+'/html/'+now_time[-8:]+'.html')
 # png_file = ('./../report/'+now_time[:10]+'/png/')
+# log_file = ('./../report/'+now_time[:10]+'/log/')
 with open(file=html_file,mode='wb') as htmlfile:
     runner = HTMLTestRunner_PY3.HTMLTestRunner(stream=htmlfile,title='百度新闻测试',description='百度新闻搜索测试报告')
     runner.run(suite)

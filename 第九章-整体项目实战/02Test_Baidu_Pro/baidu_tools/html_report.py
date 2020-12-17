@@ -9,5 +9,6 @@ def make_dir(path):
     if not(os.path.exists(path)):
         os.makedirs(path + '/html')
         os.makedirs(path + '/png')
+        os.makedirs(path + '/log')
 
 # now_time = time.strftime('%Y_%m_%d_%H_%M_%S')

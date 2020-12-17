@@ -5,11 +5,10 @@
 # @Python_verison : 3.7
 
 '''
-使用pytest.mark.parametrize装饰器可以实现测试用例的参数化。
+使用.parametrize装饰器可以实现测试用例的参数化。
 pytest.mark.parametrize('参数'，[value])
 '''
 import pytest
-
 # 一个参数
 list1 = ['寒山孤影','江湖故人','相逢何必曾相识']
 @pytest.mark.parametrize('par1',list1)

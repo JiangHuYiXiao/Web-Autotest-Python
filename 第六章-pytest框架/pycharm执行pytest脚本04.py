@@ -7,6 +7,6 @@
 # 执行unittest脚本时候，我们是run unittest
 # 但是执行pytest脚本时直接执行是不生效的，这个时候，需要我们设置一下编辑器pycharm的关于该文件的默认runner
 
-# 配置路径：setting--->tools--->python integrated tools --->testing--->default tester runner
+# 配置路径：setting--->baidu_tools--->python integrated baidu_tools --->testing--->default tester runner
 # 配置完成后需要在该文件的父目录下右键进行执行，在该文件上执行还是不行的
 

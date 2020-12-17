@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/第七章-测试框架之数据驱动应用/JSON文件的读取和数据处理05/data.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/第七章-测试框架之数据驱动应用/JSON文件的读取和数据处理05/test_json_log.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/第七章-测试框架之数据驱动应用/logging模块应用及用例异常抛出的应用04/report.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/第七章-测试框架之数据驱动应用/数据驱动_excel数据的读取操作06/test_excel,log" charset="GBK" />
+  </component>
+</project>
