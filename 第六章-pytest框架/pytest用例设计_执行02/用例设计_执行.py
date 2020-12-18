@@ -40,8 +40,8 @@
         # 运行.py模块里面,测试类里面的某个方法
         # pytest test_mod.py::TestClass::test_method
 
-    # 3.5.标记表达式
-        # >pytest -m slow
+    # 3.5.标记表达式，
+        # >pytest -m slow   用于有标签的
         # 将运行用@ pytest.mark.slow装饰器修饰的所有测试用例，标签名为slow，标签名可以自定义，后面章节会讲自定义标记mark的功能。
 
     # 3.6.从包里面运行
@@ -55,3 +55,28 @@
     # pytest -q test_add1.py
     # py.test -q test_add1.py
     # python -m pytest -q test_add1.py
+
+# 5、pytest的用例执行顺序
+    # 写在前面的就是先执行
+    # 如果需要自定义顺序，可以使用pytest-ordering插件进行自定义顺序
+    # 先按照pyetest-ordering  pip install pytest-ordering
+    # order数字小的先执行（0-7）（-1 -7）0最新执行，-7最后执行
+'''
+import pytest
+
+@pytest.mark.run(order=2)
+def test_foo():
+    assert True
+
+@pytest.mark.run(order=1)
+def test_bar():
+    assert True
+
+'''
+
+
+# 6、导出依赖包 pip freeze
+# 我们在使用别人的开源的项目时候，需要导出比人项目的所有包可以使用以下命令
+# pip freeze > requirements.txt
+# pip install -r requirements.txt
+
