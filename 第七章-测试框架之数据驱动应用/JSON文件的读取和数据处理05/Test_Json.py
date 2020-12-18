@@ -1,4 +1,8 @@
 # -*- coding:utf-8 -*-
+
+# json在线格式化工具：
+# https://www.bejson.com/
+
 # 使用json数据文件来进行驱动
 from selenium import webdriver
 import time,unittest,ddt,logging,traceback
