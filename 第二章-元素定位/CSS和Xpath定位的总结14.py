@@ -62,3 +62,11 @@ class Test_Focus():
 
     def teardown_class(self):
         self.driver.quit()
+
+
+# 我们可以直接在浏览器的console命令窗口输入命令测试我们的定位方法是否可以
+# xpath定位方法：
+# $x('//input[@id="kw"]')
+
+# css定位方法：
+# $('#kw')
