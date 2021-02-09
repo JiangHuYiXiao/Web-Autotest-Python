@@ -26,7 +26,7 @@ class Test_login():
         # self.driver.implicitly_wait(5)
         self.driver.maximize_window()
 
-    def tear_down(self):
+    def teardown(self):
         self.driver.quit()
 
     def test_login(self):
