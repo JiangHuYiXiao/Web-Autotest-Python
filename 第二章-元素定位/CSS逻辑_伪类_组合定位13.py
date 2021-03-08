@@ -48,9 +48,9 @@ from time import sleep
 driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get('https://www.baidu.com')
-driver.find_element_by_css_selector('li#li1:first_child').send_keys('selenium')     # 第一个子元素
-driver.find_element_by_css_selector('li#li1:nth_child(2)').send_keys('selenium')    # 第二个子元素
-driver.find_element_by_css_selector('li#li1:last_child').send_keys('selenium')      # 最后一个子元素
+driver.find_element_by_css_selector('li#li1:first-child').send_keys('selenium')     # 第一个子元素
+driver.find_element_by_css_selector('li#li1:nth-child(2)').send_keys('selenium')    # 第二个子元素
+driver.find_element_by_css_selector('li#li1:last-child').send_keys('selenium')      # 最后一个子元素
 driver.find_element_by_css_selector('input:enable').click()
 driver.find_element_by_css_selector('input:focus').click()
 driver.find_element_by_css_selector('input:checked').click()        # 选中的
