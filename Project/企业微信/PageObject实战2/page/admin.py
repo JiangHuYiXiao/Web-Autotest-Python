@@ -15,18 +15,28 @@ class Admin():
         chrome_option = Options()
         chrome_option.debugger_address = '127.0.0.1:9222'
         self._driver = webdriver.Chrome(options=chrome_option)
-        self._driver.maximize_window()
-        self._driver.get('https://work.weixin.qq.com')
+        # self._driver.maximize_window()
+        self._driver.get('https://work.weixin.qq.com/wework_admin/frame')
 
 
     def goto_add_member(self):
         '''
-        点击添加成员，跳转到添加成员列表页面
+        首页直接点击添加成员，跳转到添加成员列表页面
         :return:Add_Member()
         '''
+        # sleep(3)
+        # self._driver.find_element_by_css_selector('.index_service_cnt_itemWrap:nth-child(1)').click()
+        # return Add_Member(self._driver)
+
+        '''
+        如果首页的添加成员不能用了，我们就可以直接在通讯录进行添加成员，这个时候就提现了PO的价值，不需要改很多内容只需要修改PO
+        在通讯录点击添加成员
+        '''
         sleep(3)
-        self._driver.find_element_by_css_selector('.index_service_cnt_itemWrap:nth-child(1)').click()
-        return Add_Member(self._driver)
+        self._driver.find_element_by_css_selector('#menu_contacts').click()
+        sleep(10)
+        self._driver.find_element_by_css_selector('.js_has_member>div.ww_operationBar:nth-child(1)>a:nth-child(2)').click()
+        return  Add_Member(self._driver)
 
 
 
