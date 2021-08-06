@@ -13,6 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/第九章-整体项目实战/02Test_Baidu_Pro/case" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/第九章-整体项目实战/02Test_Baidu_Pro/baidu_tools" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/第九章-整体项目实战/02Test_Baidu_Pro" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Python-Selenium/自动化测试高级应用-第8章/Page Oject设计模式-8.3/PageObject设计示例02" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
