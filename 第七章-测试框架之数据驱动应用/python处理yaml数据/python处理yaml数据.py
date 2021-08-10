@@ -51,3 +51,18 @@ companies:
 '''
 
 print(yaml.load(stream=stream2, Loader =yaml.FullLoader))
+
+# 复合结构
+stream3 ='''
+languages:
+  - Ruby
+  - Perl
+  - Python 
+websites:
+  YAML: yaml.org 
+  Ruby: ruby-lang.org 
+  Python: python.org 
+  Perl: use.perl.org
+'''
+print(yaml.load(stream=stream3, Loader =yaml.FullLoader))
+
